@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+use DepReaper\Engine\Console\Command\ReapCommand;
+use Symfony\Component\Console\Application;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$application = new Application('DepReaper', '1.0.0');
+$application->add(new ReapCommand());
+$application->setDefaultCommand('reap', true);
+$application->run();

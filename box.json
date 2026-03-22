@@ -1,0 +1,10 @@
+{
+    "main": "bin/dep-reaper",
+    "directories": ["src", "config", "bin"],
+    "php-scoper": "scoper.inc.php",
+    "stub": true,
+    "compactors": [
+        "KevinGH\\Box\\Compactor\\Json"
+    ],
+    "output": "dep-reaper.phar"
+}
